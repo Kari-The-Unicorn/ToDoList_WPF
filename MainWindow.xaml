@@ -48,12 +48,11 @@
                 <TextBlock Foreground="Red"><Run Text="Urgent"/></TextBlock>
             </CheckBox>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.ColumnSpan="2" Margin="0,5,0,0">
-            <Button Style="{StaticResource MaterialDesignFlatButton}"
-                   ToolTip="MaterialDesignFlatButton" Content="Add task" Height="68" >
+        <StackPanel x:Name="sp" Orientation="Horizontal" Grid.Row="3" Grid.ColumnSpan="2" Margin="0,5,0,0">
+            <Button x:Name="bt" Style="{StaticResource MaterialDesignFlatButton}"
+                    ToolTip="MaterialDesignFlatButton" Content="Add task" Click="ClickAddTask" Height="68" >
             </Button>
-        </StackPanel>
-
+       </StackPanel>
         <CheckBox x:Name="cb1" Grid.Row="3" Margin="3,32,0,527" 
             Content="Select Date:" IsThreeState="True"
             Checked="HandleCheck" Unchecked="HandleUnchecked" Grid.Column="1"/>

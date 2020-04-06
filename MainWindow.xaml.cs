@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ToDoListWpfApp1
 {
@@ -22,9 +13,9 @@ namespace ToDoListWpfApp1
     {
         public MainWindow()
         {
-            Uri iconUri = new Uri("C:/Users/Kari/source/repos/ToDoListWpfApp1/img/icon.png", UriKind.RelativeOrAbsolute);
+            Uri iconUri = new Uri("C:/Users/karol/source/repos/ToDoListWpfApp1/img/icon.png", UriKind.RelativeOrAbsolute);
             this.Icon = BitmapFrame.Create(iconUri);
-        
+
             InitializeComponent();
         }
 
@@ -40,22 +31,12 @@ namespace ToDoListWpfApp1
             popup.IsOpen = false;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ClickAddTask(object sender, RoutedEventArgs e)
         {
-
+            var newtask = new TextBox();
+            newtask.Text = "New task";
+            sp.Children.Add(newtask);
+            sp.UpdateLayout();
         }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
-
-        //private void HandleThirdState(object sender, RoutedEventArgs e)
-        //{
-        //    cb1.Content = "The CheckBox is in the indeterminate state.";
-        //    popup.IsOpen = false;
-        //}
     }
 }

@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kari\\source\\repos\\ToDoListWpfApp1\\ToDoListWpfApp1.csproj": {}
+    "C:\\Users\\karol\\source\\repos\\ToDoListWpfApp1\\ToDoListWpfApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kari\\source\\repos\\ToDoListWpfApp1\\ToDoListWpfApp1.csproj": {
+    "C:\\Users\\karol\\source\\repos\\ToDoListWpfApp1\\ToDoListWpfApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kari\\source\\repos\\ToDoListWpfApp1\\ToDoListWpfApp1.csproj",
+        "projectUniqueName": "C:\\Users\\karol\\source\\repos\\ToDoListWpfApp1\\ToDoListWpfApp1.csproj",
         "projectName": "ToDoListWpfApp1",
-        "projectPath": "C:\\Users\\Kari\\source\\repos\\ToDoListWpfApp1\\ToDoListWpfApp1.csproj",
-        "packagesPath": "C:\\Users\\Kari\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kari\\source\\repos\\ToDoListWpfApp1\\obj\\",
+        "projectPath": "C:\\Users\\karol\\source\\repos\\ToDoListWpfApp1\\ToDoListWpfApp1.csproj",
+        "packagesPath": "C:\\Users\\karol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\karol\\source\\repos\\ToDoListWpfApp1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Kari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\karol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +64,7 @@
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.0.2, 3.0.2]"
+              "version": "[3.0.3, 3.0.3]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
@@ -86,7 +83,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
