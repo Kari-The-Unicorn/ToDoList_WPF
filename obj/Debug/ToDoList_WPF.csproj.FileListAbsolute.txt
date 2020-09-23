@@ -1,0 +1,14 @@
+C:\Users\karol\source\repos\ToDoList_WPF\bin\Debug\ToDoList_WPF.exe.config
+C:\Users\karol\source\repos\ToDoList_WPF\bin\Debug\ToDoList_WPF.exe
+C:\Users\karol\source\repos\ToDoList_WPF\bin\Debug\ToDoList_WPF.pdb
+C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\ToDoList_WPF.csprojAssemblyReference.cache
+C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\App.g.cs
+C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\ToDoList_WPF_MarkupCompile.cache
+C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\MainWindow.baml
+C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\ToDoList_WPF.g.resources
+C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\ToDoList_WPF.Properties.Resources.resources
+C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\ToDoList_WPF.csproj.GenerateResource.cache
+C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\ToDoList_WPF.csproj.CoreCompileInputs.cache
+C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\ToDoList_WPF.exe
+C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\ToDoList_WPF.pdb

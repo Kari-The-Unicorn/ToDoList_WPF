@@ -1,10 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
-namespace ToDoListWpfApp1
+namespace ToDoList_WPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -13,30 +22,7 @@ namespace ToDoListWpfApp1
     {
         public MainWindow()
         {
-            Uri iconUri = new Uri("C:/Users/karol/source/repos/ToDoListWpfApp1/img/icon.png", UriKind.RelativeOrAbsolute);
-            this.Icon = BitmapFrame.Create(iconUri);
-
             InitializeComponent();
-        }
-
-        private void HandleCheck(object sender, RoutedEventArgs e)
-        {
-            cb1.Content = "The CheckBox is checked.";
-            popup.IsOpen = true;
-        }
-
-        private void HandleUnchecked(object sender, RoutedEventArgs e)
-        {
-            cb1.Content = "The CheckBox is unchecked.";
-            popup.IsOpen = false;
-        }
-
-        private void ClickAddTask(object sender, RoutedEventArgs e)
-        {
-            var newtask = new TextBox();
-            newtask.Text = "New task";
-            sp.Children.Add(newtask);
-            sp.UpdateLayout();
         }
     }
 }

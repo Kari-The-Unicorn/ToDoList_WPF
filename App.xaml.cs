@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace ToDoListWpfApp1
+namespace ToDoList_WPF
 {
     /// <summary>
     /// Interaction logic for App.xaml
