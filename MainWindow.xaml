@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="450"
         WindowStartupLocation="CenterScreen" MinWidth="300" MinHeight="560">
-    <Grid Style="{StaticResource GeneralStyle}">
+    <Grid Style="{StaticResource GeneralGridStyle}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>

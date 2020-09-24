@@ -14,3 +14,4 @@ C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\ToDoList_WPF.pdb
 C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\TaskDetailUserControl.g.cs
 C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\TaskDetailUserControl.baml
 C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\App.baml
+C:\Users\karol\source\repos\ToDoList_WPF\obj\Debug\ToDoList_WPF.csprojAssemblyReference.cache

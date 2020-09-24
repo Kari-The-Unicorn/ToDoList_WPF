@@ -6,33 +6,77 @@
     <Application.Resources>
         <sys1:Thickness x:Key="GeneralMargin">5</sys1:Thickness>
         <sys1:Thickness x:Key="GeneralPadding">5</sys1:Thickness>
-        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" Opacity=".10" x:Key="GeneralGradientBackground">
+        <!-- General grid styles -->
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" Opacity=".10" x:Key="GeneralGridGradientBackground">
             <GradientStop Color="LightSkyBlue" Offset="0" />
             <GradientStop Color="Gray" Offset="1.0" />
         </LinearGradientBrush>
-        <Style TargetType="Grid" x:Key="GeneralStyle">
+        <Style TargetType="Grid" x:Key="GeneralGridStyle">
             <Setter Property="Background"
-                    Value="{StaticResource GeneralGradientBackground}"/>
+                    Value="{StaticResource GeneralGridGradientBackground}"/>
+            <Setter Property="Margin"
+                    Value="{StaticResource GeneralMargin}"/>
         </Style>
+        <!-- User control styles -->
+        <!-- ******************* -->
+        <!-- LinearGradientBrush for Background -->
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" Opacity=".10" x:Key="GeneralUserControlGradientBackground">
+            <GradientStop Color="LightPink" Offset="0" />
+            <GradientStop Color="LightCoral" Offset="1.0" />
+        </LinearGradientBrush>
+        <!-- DropShadowEffect for User control-->
+        <DropShadowEffect x:Key="GeneralUserControlShadow"
+                          Color="DarkGray"
+                          ShadowDepth="5"/>
+        <!-- DropShadowEffect for Button-->
+        <DropShadowEffect x:Key="ButtonUserControlShadow"
+                          Color="DarkGray"
+                          ShadowDepth="5"/>
+        <!-- ******************* -->
+        <Style TargetType="Grid" x:Key="GeneralUserControl">
+            <Setter Property="Background"
+                    Value="{StaticResource GeneralUserControlGradientBackground}"/>
+        </Style>
+        <Style TargetType="UserControl" x:Key="ShadowUserControl">
+            <Setter Property="MinWidth"
+                    Value="400"/>
+            <Setter Property="Effect"
+                    Value="{StaticResource GeneralUserControlShadow}"/>
+        </Style>
+        <Style TargetType="Border" x:Key="BorderUserControl">
+            <Setter Property="BorderBrush"
+                    Value="DarkBlue"/>
+            <Setter Property="BorderThickness"
+                    Value="1"/>
+            <Setter Property="CornerRadius"
+                    Value="5"/>
+        </Style>
+        <!-- Menu styles -->
         <Style TargetType="Menu">
             <Setter Property="Padding"
                     Value="{StaticResource GeneralPadding}"/>
         </Style>
+        <!-- Label styles -->
         <Style TargetType="Label">
             <Setter Property="Margin"
                     Value="{StaticResource GeneralMargin}"/>
         </Style>
+        <!-- TextBox styles -->
         <Style TargetType="TextBox">
             <Setter Property="Margin"
                     Value="{StaticResource GeneralMargin}"/>
         </Style>
+        <!-- DatePicker styles -->
         <Style TargetType="DatePicker">
             <Setter Property="Margin"
                     Value="{StaticResource GeneralMargin}"/>
         </Style>
+        <!-- Button styles -->
         <Style TargetType="Button">
             <Setter Property="Margin"
                     Value="{StaticResource GeneralMargin}"/>
+            <Setter Property="Effect"
+                    Value="{StaticResource ButtonUserControlShadow}"/>
         </Style>
     </Application.Resources>
 </Application>
