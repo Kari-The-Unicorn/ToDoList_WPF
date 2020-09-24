@@ -16,24 +16,13 @@ using System.Windows.Shapes;
 namespace ToDoList_WPF
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for TaskDetailUserControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TaskDetailUserControl : UserControl
     {
-        public MainWindow()
+        public TaskDetailUserControl()
         {
             InitializeComponent();
-        }
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
-        {
-            taskContentPanel.Children.Clear();
-            taskContentPanel.Children.Add(new TaskDetailUserControl());
-        }
-
-        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
-        {
-            Environment.Exit(0);
         }
     }
 }

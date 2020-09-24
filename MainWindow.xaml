@@ -1,34 +1,30 @@
-﻿<Window x:Class="ToDoList_WPF.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        x:Class="ToDoList_WPF.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="450"
         WindowStartupLocation="CenterScreen" MinWidth="300" MinHeight="560">
-    <Grid>
+    <Grid Style="{StaticResource GeneralStyle}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label Content="Add new task" FontWeight="Bold"/>
-        <Label Content="Title" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="63" Height="25"/>
-        <TextBox Margin="90,4,234,5" Grid.Row="1" TextWrapping="Wrap" Text="Write title"/>
-        <Label Content="Description" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" ScrollViewer.CanContentScroll="True" Height="26"/>
-        <TextBox HorizontalAlignment="Left" Height="18" Margin="90,4,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Write description" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Priority" HorizontalAlignment="Left" Margin="10,5,0,0" Grid.Row="3" VerticalAlignment="Top" Width="69" Height="26"/>
-        <CheckBox Content="Normal" BorderBrush="#008000" HorizontalAlignment="Left" Margin="90,4,0,0" Grid.Row="3" VerticalAlignment="Top" Height="15" Width="60"/>
-        <CheckBox Content="Urgent" BorderBrush="#8B0000" HorizontalAlignment="Left" Margin="90,21,0,0" Grid.Row="3" VerticalAlignment="Top" Height="15" Width="57"/>
-        <DatePicker HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Height="24" Width="102"/>
-        <StackPanel HorizontalAlignment="Left" Height="316" Margin="16,10,0,0" Grid.Row="6" VerticalAlignment="Top" Width="405"/>
-        <StackPanel HorizontalAlignment="Left" Height="20" Margin="23,0,0,0" Grid.Row="5" VerticalAlignment="Top" Width="107" Orientation="Horizontal">
-            <Button Content="Add" Width="51"/>
-            <Button Content="Cancel" Width="48"/>
-        </StackPanel>
+        <Menu>
+            <MenuItem Header="_File" Click="MenuItem_Click">
+                <MenuItem Header="_New task"/>
+                <Separator/>
+                <MenuItem Header="_Exit" Click="MenuItem_Click_1"/>
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Header="_Cut"/>
+                <MenuItem Header="_Copy"/>
+                <MenuItem Header="_Paste"/>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1"
+      Name="taskContentPanel" />
     </Grid>
 </Window>
