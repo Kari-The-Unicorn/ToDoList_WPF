@@ -35,5 +35,11 @@ namespace ToDoList_WPF
         {
             Environment.Exit(0);
         }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+            taskContentPanel.Children.Clear();
+            taskContentPanel.Children.Add(new TasksDetailsUserControl());
+        }
     }
 }

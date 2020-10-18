@@ -13,8 +13,9 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Menu>
-            <MenuItem Header="_File" Click="MenuItem_Click">
-                <MenuItem Header="_New task"/>
+            <MenuItem Header="_File" >
+                <MenuItem Header="_New task" Click="MenuItem_Click"/>
+                <MenuItem Header="_Tasks" Click="MenuItem_Click_2"/>
                 <Separator/>
                 <MenuItem Header="_Exit" Click="MenuItem_Click_1"/>
             </MenuItem>

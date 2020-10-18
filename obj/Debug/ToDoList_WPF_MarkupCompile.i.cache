@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\karol\source\repos\ToDoList_WPF\App.xaml
-21231863605
+3-1615674546
 
-71110417925
+1093175619
 13-1505183044
-MainWindow.xaml;TaskDetailUserControl.xaml;
+MainWindow.xaml;TasksDetailsUserControl.xaml;TaskDetailUserControl.xaml;
 
 True
 

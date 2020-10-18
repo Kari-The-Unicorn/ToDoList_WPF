@@ -55,6 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Data_Layer\Task.cs" />
+    <Compile Include="Data_Layer\Tasks.cs" />
+    <Compile Include="TasksDetailsUserControl.xaml.cs">
+      <DependentUpon>TasksDetailsUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TaskDetailUserControl.xaml.cs">
       <DependentUpon>TaskDetailUserControl.xaml</DependentUpon>
     </Compile>
@@ -70,6 +75,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TasksDetailsUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="TaskDetailUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

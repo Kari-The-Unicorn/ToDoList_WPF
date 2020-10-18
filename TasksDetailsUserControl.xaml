@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="ToDoList_WPF.TasksDetailsUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             xmlns:vm="clr-namespace:ToDoList_WPF.Data_Layer;assembly="
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <vm:Tasks x:Key="tasks">
+            <vm:Task TaskId="1"
+                 TaskTitle="Cleaning"
+                 TaskDescription="Clean the bathroom"
+                 TaskPriority="Normal"
+                 TaskEndDate="05/29/2021" />
+            <vm:Task TaskId="2"
+                 TaskTitle="Cleaning 2"
+                 TaskDescription="Clean the living room"
+                 TaskPriority="Normal"
+                 TaskEndDate="05/29/2022" />
+        </vm:Tasks>
+    </UserControl.Resources>
+    <Grid DataContext="{StaticResource tasks}">
+        <DataGrid ItemsSource="{Binding}" />
+    </Grid>
+</UserControl>
