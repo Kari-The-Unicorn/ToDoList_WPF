@@ -20,7 +20,11 @@
                  TaskEndDate="05/29/2022" />
         </vm:Tasks>
     </UserControl.Resources>
-    <Grid DataContext="{StaticResource tasks}">
+    <Border Style="{StaticResource BorderUserControl}">
+    <Grid DataContext="{StaticResource tasks}"
+       Margin="{StaticResource GeneralMargin}"
+              Background="{StaticResource GeneralUserControlGradientBackground}">
         <DataGrid ItemsSource="{Binding}" />
     </Grid>
+    </Border>
 </UserControl>
